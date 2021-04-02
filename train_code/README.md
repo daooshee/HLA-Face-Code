@@ -1,4 +1,4 @@
-### Training Code for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection
+# Training Code for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection
 
 The official PyTorch implementation **(training code)** for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection (CVPR21).
 
@@ -8,7 +8,7 @@ You can find more information on our [project website](https://daooshee.github.i
 
 
 
-##### 1. Requirements
+## 1. Requirements
 
 - Python 3
 - PyTorch (I use version 1.60. I think other versions would also be OK)
@@ -18,9 +18,9 @@ You can find more information on our [project website](https://daooshee.github.i
 
 
 
-##### 2. Data preparation
+## 2. Data preparation
 
-**2.1 DARK FACE**
+### **2.1 DARK FACE**
 
 Download the DARK FACE training and validation images (DarkFace_Train.zip) from https://flyywh.github.io/CVPRW2019LowLight/.
 
@@ -32,7 +32,7 @@ Only the ./images folder is needed, the labels are not used. Finally, organize t
 ./dataset/DarkFace/images/train/xxx.png
 ```
 
-**2.2 WIDER FACE**
+### **2.2 WIDER FACE**
 
 Download the WIDER FACE dataset from http://shuoyang1213.me/WIDERFACE/, and organize them as 
 
@@ -55,7 +55,7 @@ Different from the original face annotations, we reorganize them into
 
 
 
-##### 3. Training brightening  E(L)
+## 3. Training brightening  E(L)
 
 Please refer to [./train_brightening](./train_brightening/README.md).
 
@@ -65,7 +65,7 @@ If you want to skip the whole brightening process, the enhanced DARK FACE traini
 
 
 
-##### 4. Training noise synthesis H_noise
+## 4. Training noise synthesis H_noise
 
 Please refer to [./train_noise_synthesis](./train_noise_synthesis/README.md).
 
@@ -73,9 +73,9 @@ If you want to skip this step, the distorted WIDER FACE training set can be down
 
 
 
-##### 5. Joint High-Low Adaptation
+## 5. Joint High-Low Adaptation
 
-**5.1 Dataset preparation**
+### **5.1 Dataset preparation**
 
 In summary, three datasets are needed for this process.
 
@@ -109,7 +109,7 @@ To avoid randomly cropping too many meaningless patches, we first use [MF](https
 
 
 
-**5.2 Pre-training headers**
+### **5.2 Pre-training headers**
 
 Before training the whole framework, we need to pre-train the self-supervised learning headers
 
@@ -139,7 +139,7 @@ Finally, organize pre-trained headers as
 
 
 
-**5.3 Pre-training on WIDER FACE**
+### **5.3 Pre-training on WIDER FACE**
 
 The face detector DSFD is first pre-trained on WIDER FACE. We use the checkpoint provided by https://github.com/yxlijun/DSFD.pytorch. Please download and save it to `./pretrained_weights/dsfd_vgg_0.880.pth`.
 
@@ -147,7 +147,7 @@ For Google users, the checkpoint can also be downloaded from [[Google]](https://
 
 
 
-**5.3 Main Training**
+### **5.4 Main Training**
 
 ```
 python train.py --multigpu

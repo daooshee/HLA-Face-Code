@@ -1,4 +1,4 @@
-## HLA-Face: Joint High-Low Adaptation for Low Light Face Detection
+# HLA-Face: Joint High-Low Adaptation for Low Light Face Detection
 
 The official PyTorch implementation for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection (CVPR21).
 
@@ -8,7 +8,7 @@ You can find more information on our [project website](https://daooshee.github.i
 
 
 
-#### 1. Description
+## 1. Description
 
 Our face detection mAP on DARK FACE test set (*trained without DARK FACE labels*): 44.4
 
@@ -18,7 +18,7 @@ Precision-Recall (PR) curves on DARK FACE.
 
 
 
-#### 2. Training code
+## 2. Training code
 
 Please follow [[Training Code]](https://github.com/daooshee/HLA-Face-Code/tree/main/train_code) to download and prepare the dataset.
 
@@ -33,13 +33,13 @@ More details are given in [[Training Code].](https://github.com/daooshee/HLA-Fac
 
 
 
-#### 3. Testing code
+## 3. Testing code
 
 First, download and `cd ./test_code`.
 
 
 
-##### 3.1 Requirements
+### 3.1 Requirements
 
 - Python 3
 
@@ -57,7 +57,7 @@ First, download and `cd ./test_code`.
 
 
 
-##### 3.2 Demo
+### 3.2 Demo
 
 Download the checkpoints from [[Google]](https://drive.google.com/drive/folders/1OQOqbf3OXhRZvRmIu9Bbg-rjKKLh4lHv?usp=sharing) [[Baidu (xnb6)]](https://pan.baidu.com/s/1kUnhuSUQ9g4d7jpO0doviA), and save them as:
 
@@ -80,7 +80,7 @@ Here, the left image is `test.png`, and the right image is the visualized face d
 
 
 
-##### 3.3 Test more images
+### 3.3 Test more images
 
 You can further edit the function `load_images()` in `test.py` to load your testing images. The detection results can be found in ./result where each detection result is named by the name of the testing image.
 

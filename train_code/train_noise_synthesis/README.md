@@ -1,4 +1,4 @@
-#### [Noise Synthesis H_noise] Training Code for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection (CVPR21)
+## [Noise Synthesis H_noise] Training Code for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection (CVPR21)
 
 The official PyTorch implementation **(partial training code)** for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection (CVPR21).
 
@@ -8,14 +8,14 @@ You can find more information on our [project website](https://daooshee.github.i
 
 
 
-##### 1. Requirements
+### 1. Requirements
 
 - Python 3
 - opencv
 
 
 
-##### 2. Blurring E(L) and generate E(L)_blur
+### 2. Blurring E(L) and generate E(L)_blur
 
 ```
 python 'Blurring_E(L).py'
@@ -25,7 +25,7 @@ This code will automatically blur the images in `../dataset/DarkFace/images_enha
 
 
 
-##### 3. Training Pix2Pix to learn the mapping from E(L)_blur to E(L) for noise synthesis
+### 3. Training Pix2Pix to learn the mapping from E(L)_blur to E(L) for noise synthesis
 
 We use the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) project.
 
@@ -45,7 +45,7 @@ If you want to skip the training process, the trained models can be downloaded f
 
 
 
-##### 4. Blurring H and generate H_blur
+### 4. Blurring H and generate H_blur
 
 ```
 python Blurring_H.py
@@ -57,7 +57,7 @@ This script also pads the image, so that the resolution can be divided by 256 (t
 
 
 
-##### 5. Applying the learned Pix2Pix on H_blur and generate H_noise
+### 5. Applying the learned Pix2Pix on H_blur and generate H_noise
 
 Link the dataset
 
