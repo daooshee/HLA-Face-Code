@@ -14,7 +14,7 @@ Our face detection mAP on DARK FACE test set (*trained without DARK FACE labels*
 
 Precision-Recall (PR) curves on DARK FACE.
 
-<img src="./figures/Comparison-Results.png" alt="Comparison-Results" style="zoom: 33%;" /> 
+<img src="./figures/Comparison-Results.png" alt="Comparison-Results" style="zoom: 15%;" /> 
 
 
 
