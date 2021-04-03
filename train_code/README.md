@@ -24,7 +24,7 @@ You can find more information on our [project website](https://daooshee.github.i
 
 Download the DARK FACE training and validation images (DarkFace_Train.zip) from https://flyywh.github.io/CVPRW2019LowLight/.
 
-Only the ./images folder is needed, the labels are not used. Finally, organize them as
+Only the ./images folder is needed, the labels are not used. Finally, organize images as
 
 ```
 ./dataset/DarkFace/images/train/xxx.png
@@ -34,7 +34,7 @@ Only the ./images folder is needed, the labels are not used. Finally, organize t
 
 ### **2.2 WIDER FACE**
 
-Download the WIDER FACE dataset from http://shuoyang1213.me/WIDERFACE/, and organize them as 
+Download the WIDER FACE dataset from http://shuoyang1213.me/WIDERFACE/, and organize images as 
 
 ```
 ./dataset/WiderFace/WIDER_train/images/x-xxx/xxx.jpg
@@ -105,7 +105,7 @@ In summary, three datasets are needed for this process.
 
 
 
-To avoid randomly cropping too many meaningless patches, we first use [MF](https://github.com/baidut/BIMEF/blob/master/lowlight/mf.m) + [DSFD](https://github.com/yxlijun/DSFD.pytorch) to detection the faces in DARK FACE. If you want to skip this step, the detected results have been provided in `./dataset/mf_dsfd_dark_face_train.txt`.
+To avoid randomly cropping too many meaningless patches, we first use [MF](https://github.com/baidut/BIMEF/blob/master/lowlight/mf.m) + [DSFD](https://github.com/yxlijun/DSFD.pytorch) to detect the faces in DARK FACE. If you want to skip this step, the detected results have been provided in `./dataset/mf_dsfd_dark_face_train.txt`.
 
 
 
@@ -129,7 +129,7 @@ Note that `transfer_headers.py` is only an example script. Please edit it to sav
 
 If you want to skip this step, pre-trained headers can be downloaded from [[Google]](https://drive.google.com/drive/folders/1INhVq2XNcfyz8w2D71KP5Ucmhtmc9m01?usp=sharing) [[Baidu (jhgg)]](https://pan.baidu.com/s/1lNsxf9YY-k0CmNH4JN6hdg).
 
-Finally, organize pre-trained headers as
+Finally, organize the pre-trained headers as
 
 ```
 ./pretrained_weights/jig_33_head.pth
@@ -143,7 +143,7 @@ Finally, organize pre-trained headers as
 
 The face detector DSFD is first pre-trained on WIDER FACE. We use the checkpoint provided by https://github.com/yxlijun/DSFD.pytorch. Please download and save it to `./pretrained_weights/dsfd_vgg_0.880.pth`.
 
-For Google users, the checkpoint can also be downloaded from [[Google]](https://drive.google.com/drive/folders/1INhVq2XNcfyz8w2D71KP5Ucmhtmc9m01?usp=sharing).
+For non Baidu users, the checkpoint can also be downloaded from [[Google]](https://drive.google.com/drive/folders/1INhVq2XNcfyz8w2D71KP5Ucmhtmc9m01?usp=sharing).
 
 
 
