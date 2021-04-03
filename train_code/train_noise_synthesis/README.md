@@ -41,7 +41,7 @@ Then train Pix2Pix
 python train.py --dataroot ./datasets/DARKFACE_pix2pix_train --name DARKFACE_noise_synthesis_pix2pix --model pix2pix --netG unet_256 --direction AtoB --lambda_L1 100 --dataset_mode aligned --norm batch --pool_size 0 --preprocess crop --batch_size 8
 ```
 
-If you want to skip the training process, the trained models can be downloaded from [[Google]](https://drive.google.com/file/d/1AmTirjBe765vyRK1u4N4wzwc4rpvklo6/view?usp=sharing), [[Baidu (u9cj)]](https://pan.baidu.com/s/1p2vYlqGxfwV7u6yfWGQ_LA).
+If you want to skip the training process, the trained models can be downloaded from [[Google]](https://drive.google.com/file/d/1AmTirjBe765vyRK1u4N4wzwc4rpvklo6/view?usp=sharing) [[Baidu (u9cj)]](https://pan.baidu.com/s/1p2vYlqGxfwV7u6yfWGQ_LA).
 
 
 
