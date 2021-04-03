@@ -47,7 +47,7 @@ First, download and `cd ./test_code`.
 
   - Higher versions may cause the `RuntimeError: Legacy autograd function with non-static forward method is deprecated. Please use new-style autograd function with static forward method` bug.
 
-  - According to https://github.com/yxlijun/DSFD.pytorch, PyTorch 0.3 is also OK, but we have checked it.
+  - According to https://github.com/yxlijun/DSFD.pytorch, PyTorch 0.3 is also OK, but we have not checked it.
 
 - opencv
 
