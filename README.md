@@ -14,7 +14,7 @@ Our face detection mAP on DARK FACE test set (*trained without DARK FACE labels*
 
 Precision-Recall (PR) curves on DARK FACE.
 
-<img src="./figures/Comparison-Results.png" alt="Comparison-Results" style="zoom: 15%;" /> 
+<img src="./figures/Comparison-Results.png" alt="Comparison-Results"/> 
 
 
 
@@ -76,7 +76,7 @@ The detection result (a text file) can be found in `./result/` and visualized by
 
 Here, the left image is `test.png`, and the right image is the visualized face detection result.
 
- <img src="./figures/example.png" alt="test"  />
+ <img src="./figures/example.png" alt="test"/>
 
 
 
