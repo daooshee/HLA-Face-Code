@@ -1,6 +1,6 @@
 # HLA-Face: Joint High-Low Adaptation for Low Light Face Detection
 
-The official PyTorch implementation for HLA-Face: Joint High-Low Adaptation for Low Light Face Detection (CVPR21).
+The official PyTorch implementation for [HLA-Face: Joint High-Low Adaptation for Low Light Face Detection](https://arxiv.org/abs/2104.01984) (CVPR21).
 
 You can find more information on our [project website](https://daooshee.github.io/HLA-Face-Website/).
 
