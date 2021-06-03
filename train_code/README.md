@@ -173,6 +173,20 @@ We also provide strategies that we have tried but finally not adopted
 - `CONTRASTIVE_SOURCE` for contrastive learning on the source domain
 
 
+### **5.5 Evaluation**
+
+The checkpoint saved in training contains adaptation heads, which are by default not taken into consideration in [test.py](../test_code/test.py). Therefore, to evaluate trained models, please edit the [loading code](..//test_code/test.py#L208) into
+
+```
+net_param = torch.load('trainer_0.pth')
+new_net_param = {}
+for param_key in net_param:
+    if param_key[:3] == 'net':
+        new_net_param[param_key[4:]] = net_param[param_key]
+net.load_state_dict(new_net_param)
+```
+
+
 
 ------
 
