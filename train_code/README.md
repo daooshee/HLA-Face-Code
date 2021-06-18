@@ -11,7 +11,7 @@ You can find more information on our [project website](https://daooshee.github.i
 ## 1. Requirements
 
 - Python 3
-- PyTorch (I use version 1.60. I think other versions would also be OK)
+- PyTorch (I use version 1.6.0. Suggest ≥ 1.6.0. It seems that lower versions do not support multi-GPU well)
 - opencv
 - numpy
 - easydict
